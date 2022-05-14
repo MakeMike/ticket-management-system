@@ -1,0 +1,53 @@
+@media only screen and (max-width: 425px) {
+    #main{
+        transform: scale(1) rotate(90deg);
+        animation: scroll-down 2s forwards;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 426px){
+    #main{
+        transform: scale(1) rotate(90deg);
+        animation: scroll-down-m 2s forwards;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .svg{
+        width: 100%;
+    }
+    #main{
+        animation: scroll-down-big 2s forwards;
+        
+    }
+}
+html{
+    background-color: black;
+}
+@keyframes scroll-down{
+    from{
+        margin-top: -500px;
+    }
+    to{
+        margin-top: 20%;
+    }
+}
+@keyframes scroll-down-big{
+    from{
+        margin-top: -500;
+    }
+    to{
+        margin-top: 15%;
+    }
+}
+
+
+@keyframes scroll-down-m{
+    from{
+        margin-top: -5000;
+    }
+    to{
+        margin-top: 40%;
+    }
+}
